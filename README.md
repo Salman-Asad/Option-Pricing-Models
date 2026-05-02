@@ -9,7 +9,7 @@ All models are validated against live market data fetched via the yfinance API.
 option-pricing-models/
 │
 ├── Option_Pricing.ipynb       # Main Jupyter Notebook
-├── README.md                  # Project documentation
+└── README.md                  # Project documentation
 
 📌 Features
 1. CRR Binomial Tree Model
@@ -34,7 +34,7 @@ Verified the no-arbitrage relationship: C - P = S₀ - Ke^(-rT)
 Confirmed parity holds for both CRR and BS models
 
 5. Greeks (Risk Sensitivities)
-GreekFormulaMeaningDeltaN(d1)Sensitivity of option price to stock priceGammaN'(d1) / (S₀σ√T)Rate of change of DeltaVegaS₀ · N'(d1) · √TSensitivity to volatility
+GreekFormulaMeaningDeltaN(d1)Sensitivity of option price to stock priceGammaN'(d1) / (S₀ σ √T)Rate of change of DeltaVegaS₀ · N'(d1) · √TSensitivity to volatility
 6. Replicating Portfolio
 
 Constructed a portfolio of Δ shares + B bond that exactly replicates the option payoff
@@ -54,8 +54,10 @@ Strike dimension → Volatility Smirk
 Time dimension → Term Structure of Volatility
 
 
+
+
 📊 Key Results
-MetricValueUnderlyingAAPLSpot Price S₀~280Strike K280Risk-free Rate r3%Historical Volatility σ~32%Delta (Call)0.5689Delta (Put)-0.4311Gamma0.0065Vega74.24
+MetricValueUnderlyingAAPLSpot Price S₀approx. 280Strike K280Risk-free Rate r3%Historical Volatility σapprox. 32%Delta (Call)0.5689Delta (Put)-0.4311Gamma0.0065Vega74.24
 
 💡 Key Insights
 
@@ -66,32 +68,17 @@ The Volatility Smirk reflects the market's asymmetric fear of downside crashes v
 
 
 🛠️ Tech Stack
-
-Python 3.12
-NumPy — numerical computations
-Pandas — data manipulation
-Matplotlib — plotting
-Seaborn — heatmap visualization
-SciPy — normal distribution functions
-yfinance — live market data
+LibraryPurposePython 3.12Core languageNumPyNumerical computationsPandasData manipulationMatplotlibPlottingSeabornHeatmap visualizationSciPyNormal distribution functionsyfinanceLive market data
 
 🚀 How to Run
-
-Clone the repository:
-
-bashgit clone https://github.com/Salman-Asad/option-pricing-models.git
-cd option-pricing-models
-
-Install dependencies:
-
+1. Clone the repository:
+bashgit clone https://github.com/Salman-Asad/Option-Pricing-Models.git
+cd Option-Pricing-Models
+2. Install dependencies:
 bashpip install numpy pandas matplotlib seaborn scipy yfinance jupyter
-
-Open the notebook:
-
+3. Open the notebook:
 bashjupyter notebook Option_Pricing.ipynb
-
-Run all cells from top to bottom
-
+4. Run all cells from top to bottom
 
 ⚠️ Note: Market data is fetched live via yfinance — prices and IV values will differ from the results shown here depending on when you run the notebook.
 
@@ -104,6 +91,6 @@ Black, F., Scholes, M. (1973). The Pricing of Options and Corporate Liabilities.
 
 👤 Author
 Salman Asad
-Show Image
+GitHub Profile
 
 Built as part of a quantitative finance self-study project.
