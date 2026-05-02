@@ -34,8 +34,12 @@ Verified the no-arbitrage relationship: C - P = S₀ - Ke^(-rT)
 Confirmed parity holds for both CRR and BS models
 
 5. Greeks (Risk Sensitivities)
-GreekFormulaMeaningDeltaN(d1)Sensitivity of option price to stock priceGammaN'(d1) / (S₀ σ √T)Rate of change of DeltaVegaS₀ · N'(d1) · √TSensitivity to volatility
-6. Replicating Portfolio
+GreekFormulaMeaning:
+Delta N(d1) Sensitivity of option price to stock price
+Gamma N'(d1) / (S₀ σ √T) Rate of change of Delta
+Vega S₀ · N'(d1) · √T Sensitivity to volatility
+
+7. Replicating Portfolio
 
 Constructed a portfolio of Δ shares + B bond that exactly replicates the option payoff
 Verified: Δ · S₀ + B = Option Price for both call and put
@@ -57,7 +61,16 @@ Time dimension → Term Structure of Volatility
 
 
 📊 Key Results
-MetricValueUnderlyingAAPLSpot Price S₀approx. 280Strike K280Risk-free Rate r3%Historical Volatility σapprox. 32%Delta (Call)0.5689Delta (Put)-0.4311Gamma0.0065Vega74.24
+Metric                      Value  
+Underlying                  AAPL 
+Spot Price S₀               approx. 280
+Strike K                    280
+Risk-free Rate r            3%
+Historical Volatility σ     approx. 32%
+Delta (Call)                0.5689
+Delta (Put)                 -0.4311
+Gamma                       0.0065
+Vega                        74.24
 
 💡 Key Insights
 
@@ -68,7 +81,14 @@ The Volatility Smirk reflects the market's asymmetric fear of downside crashes v
 
 
 🛠️ Tech Stack
-LibraryPurposePython 3.12Core languageNumPyNumerical computationsPandasData manipulationMatplotlibPlottingSeabornHeatmap visualizationSciPyNormal distribution functionsyfinanceLive market data
+Library          Purpose
+Python 3.12      Core language
+NumPy            Numerical computations
+Pandas           Data manipulation
+Matplotlib       Plotting
+Seaborn          Heatmap visualization
+SciPy            Normal distribution functions
+yfinance         Live market data
 
 🚀 How to Run
 1. Clone the repository:
@@ -91,6 +111,5 @@ Black, F., Scholes, M. (1973). The Pricing of Options and Corporate Liabilities.
 
 👤 Author
 Salman Asad
-GitHub Profile
 
-Built as part of a quantitative finance self-study project.
+"Built as part of a quantitative finance self-study project."
