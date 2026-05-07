@@ -90,7 +90,7 @@ Seaborn          Heatmap visualization
 SciPy            Normal distribution functions
 yfinance         Live market data
 
-🚀 How to Run
+How to Run
 1. Clone the repository:
 bashgit clone https://github.com/Salman-Asad/Option-Pricing-Models.git
 cd Option-Pricing-Models
@@ -100,16 +100,16 @@ bashpip install numpy pandas matplotlib seaborn scipy yfinance jupyter
 bashjupyter notebook Option_Pricing.ipynb
 4. Run all cells from top to bottom
 
-⚠️ Note: Market data is fetched live via yfinance — prices and IV values will differ from the results shown here depending on when you run the notebook.
+Note: Market data is fetched live via yfinance, prices and IV values will differ from the results shown here depending on when you run the notebook.
 
 
-📚 References
+References
 
 Cox, J., Ross, S., Rubinstein, M. (1979). Option Pricing: A Simplified Approach. Journal of Financial Economics.
 Black, F., Scholes, M. (1973). The Pricing of Options and Corporate Liabilities. Journal of Political Economy.
 
 
-👤 Author
+Author
 Salman Asad
 
 "Built as part of a quantitative finance self-study project."
